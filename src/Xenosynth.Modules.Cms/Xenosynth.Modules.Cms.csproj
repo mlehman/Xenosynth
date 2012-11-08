@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{71DF4311-B87B-4C87-A999-822A800A555F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xenosynth.Modules.Cms</RootNamespace>
+    <AssemblyName>Xenosynth.Modules.Cms</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="FreeTextBox, Version=3.0.5000.1, Culture=neutral, PublicKeyToken=5962a4e684a48b87">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="StaticDust.Web.UI.Controls.UploadDialog, Version=2.3.1.10088, Culture=neutral, PublicKeyToken=7a8bf5cc6a5e58dd">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\StaticDust.Web.UI.Controls.UploadDialog.dll</HintPath>
+    </Reference>
+    <Reference Include="Inform">
+      <HintPath>..\..\lib\Inform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CmsException.cs" />
+    <Compile Include="CmsModule.cs" />
+    <Compile Include="Data\IContent.cs" />
+    <Compile Include="Data\IContentPersister.cs" />
+    <Compile Include="Data\LiteralContent.cs" />
+    <Compile Include="Data\LiteralDataItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RecentFiles.cs" />
+    <Compile Include="Web\CmsConfiguration.cs" />
+    <Compile Include="Web\CmsContext.cs" />
+    <Compile Include="Web\CmsGalleryTemplate.cs" />
+    <Compile Include="Web\CmsHttpApplication.cs" />
+    <Compile Include="Web\CmsHttpContext.cs" />
+    <Compile Include="Web\CmsMode.cs" />
+    <Compile Include="Web\CmsRegisteredContent.cs" />
+    <Compile Include="Web\CmsResource.cs" />
+    <Compile Include="Web\CmsVirtualPathProvider.cs" />
+    <Compile Include="Web\FileCache.cs" />
+    <Compile Include="Web\FileCacheStream.cs" />
+    <Compile Include="Web\RequestHandler.cs" />
+    <Compile Include="Web\SearchResult.cs" />
+    <Compile Include="Web\SearchResultCollection.cs" />
+    <Compile Include="Web\StaticFileHandler.cs" />
+    <Compile Include="Web\UI\CmsAttribute.cs" />
+    <Compile Include="Web\UI\CmsContentCollection.cs" />
+    <Compile Include="Web\UI\CmsDirectory.cs" />
+    <Compile Include="Web\UI\CmsDirectoryCollection.cs" />
+    <Compile Include="Web\UI\CmsFile.cs" />
+    <Compile Include="Web\UI\CmsFileAttribute.cs" />
+    <Compile Include="Web\UI\CmsFileAttributeCollection.cs" />
+    <Compile Include="Web\UI\CmsFileCollection.cs" />
+    <Compile Include="Web\UI\CmsFileInfo.cs" />
+    <Compile Include="Web\UI\CmsFileType.cs" />
+    <Compile Include="Web\UI\CmsImage.cs" />
+    <Compile Include="Web\UI\CmsImageGallery.cs" />
+    <Compile Include="Web\UI\CmsPage.cs" />
+    <Compile Include="Web\UI\CmsPageCollection.cs" />
+    <Compile Include="Web\UI\CmsShortcut.cs" />
+    <Compile Include="Web\UI\CmsState.cs" />
+    <Compile Include="Web\UI\CmsTemplate.cs" />
+    <Compile Include="Web\UI\CmsTemplateGallery.cs" />
+    <Compile Include="Web\UI\CmsWebDirectory.cs" />
+    <Compile Include="Web\UI\CmsDocumentLibrary.cs" />
+    <Compile Include="Web\UI\CmsDocument.cs" />
+    <Compile Include="Web\UI\WebControls\AttributePlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\ConsoleControls\Console.cs" />
+    <Compile Include="Web\UI\WebControls\ConsoleControls\ConsolePlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\ContentPlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\ContentTypeAttribute.cs" />
+    <Compile Include="Web\UI\WebControls\HtmlContentPlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\ImagePlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\LiteralAttributePlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\LiteralContentPlaceHolder.cs" />
+    <Compile Include="Web\UI\WebControls\MetaTag.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xenosynth\Xenosynth.csproj">
+      <Project>{D5703B02-234D-46F5-8DD4-E06F430ED72B}</Project>
+      <Name>Xenosynth</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
