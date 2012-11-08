@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_web_controls_1_1_content_place_holder.html" title="This class supports the Xenosynth CMS Module and is not intended to be used directly from your code..." alt="" coords="131,101,288,131"/>
+<area shape="rect" id="node4" href="$interface_xenosynth_1_1_data_1_1_i_content_persister.html" title="The interface for a ContentPersister. The content persister is an interface the enables adding new ty..." alt="" coords="80,5,339,35"/>
+</map>

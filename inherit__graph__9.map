@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$interface_xenosynth_1_1_modules_1_1_i_module.html" title="IModule is the interface that is required to be implemented by any extension that needs initializatio..." alt="" coords="7,5,215,35"/>
+<area shape="rect" id="node3" href="$class_xenosynth_1_1_modules_1_1_cms_1_1_cms_module.html" title="This class supports the Xenosynth Framework and is not intended to be used directly from your code..." alt="" coords="264,5,533,35"/>
+</map>

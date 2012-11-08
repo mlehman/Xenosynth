@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_page.html" title="A CmsPage is an HTML page in the CMS." alt="" coords="155,197,368,227"/>
+<area shape="rect" id="node4" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_file.html" title="The base class for all files in the Xenosynth CMS." alt="" coords="368,101,443,131"/>
+<area shape="rect" id="node6" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_file_attribute_collection.html" title="A collection of CmsFileAttributes for a CmsFile.." alt="" coords="87,5,417,35"/>
+<area shape="rect" id="node8" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_file_type.html" title="A CmsFile type." alt="" coords="441,5,676,35"/>
+</map>

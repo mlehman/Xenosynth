@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node5" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_document_library.html" title="Xenosynth.Web.UI.CmsDocumentLibrary" alt="" coords="419,5,715,35"/>
+<area shape="rect" id="node7" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_image_gallery.html" title="Xenosynth.Web.UI.CmsImageGallery" alt="" coords="433,59,700,88"/>
+<area shape="rect" id="node9" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_template_gallery.html" title="A directory for CmsTemplates." alt="" coords="423,112,711,141"/>
+<area shape="rect" id="node11" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_web_directory.html" title="A CmsWebDirectory is a general directory type for cms content." alt="" coords="431,165,703,195"/>
+<area shape="rect" id="node2" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_file.html" title="The base class for all files in the Xenosynth CMS." alt="" coords="5,85,80,115"/>
+</map>

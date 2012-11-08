@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$interface_xenosynth_1_1_data_1_1_i_content.html" title="The interface for a Content Item." alt="" coords="36,5,233,35"/>
+<area shape="rect" id="node3" href="$class_xenosynth_1_1_data_1_1_literal_content.html" title="Literal Content is a text blob stored in the primary database." alt="" coords="313,32,548,61"/>
+<area shape="rect" id="node4" href="$interface_xenosynth_1_1_data_1_1_i_content_persister.html" title="The interface for a ContentPersister. The content persister is an interface the enables adding new ty..." alt="" coords="5,59,264,88"/>
+</map>

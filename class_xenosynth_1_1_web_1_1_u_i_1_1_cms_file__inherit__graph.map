@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_directory.html" title="The base class for directories in the Xenosynth CMS." alt="" coords="260,85,503,115"/>
+<area shape="rect" id="node13" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_document.html" title="A CmsDocument for a binary file." alt="" coords="256,139,507,168"/>
+<area shape="rect" id="node15" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_image.html" title="Used for storing images in the CMS." alt="" coords="271,192,492,221"/>
+<area shape="rect" id="node17" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_page.html" title="A CmsPage is an HTML page in the CMS." alt="" coords="275,245,488,275"/>
+<area shape="rect" id="node19" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_shortcut.html" title="Provides a link to another url." alt="" coords="263,299,500,328"/>
+<area shape="rect" id="node21" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_template.html" title="A template for a CmsPage." alt="" coords="260,352,503,381"/>
+<area shape="rect" id="node5" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_document_library.html" title="Xenosynth.Web.UI.CmsDocumentLibrary" alt="" coords="555,5,851,35"/>
+<area shape="rect" id="node7" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_image_gallery.html" title="Xenosynth.Web.UI.CmsImageGallery" alt="" coords="569,59,836,88"/>
+<area shape="rect" id="node9" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_template_gallery.html" title="A directory for CmsTemplates." alt="" coords="559,112,847,141"/>
+<area shape="rect" id="node11" href="$class_xenosynth_1_1_web_1_1_u_i_1_1_cms_web_directory.html" title="A CmsWebDirectory is a general directory type for cms content." alt="" coords="567,165,839,195"/>
+</map>
