@@ -1,0 +1,851 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Xenosynth.Admin</AssemblyName>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xenosynth.Admin</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>False</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <FileAlignment>4096</FileAlignment>
+    <Optimize>True</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BitFactory.Logging">
+      <Name>BitFactory.Logging</Name>
+      <HintPath>..\..\lib\BitFactory.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.AlertButton">
+      <Name>Fluent.AlertButton</Name>
+      <HintPath>..\..\lib\Fluent.AlertButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.AutoPostBack">
+      <Name>Fluent.AutoPostBack</Name>
+      <HintPath>..\..\lib\Fluent.AutoPostBack.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.ControlFocus">
+      <Name>Fluent.ControlFocus</Name>
+      <HintPath>..\..\lib\Fluent.ControlFocus.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.DataGridAdapter">
+      <Name>Fluent.DataGridAdapter</Name>
+      <HintPath>..\..\lib\Fluent.DataGridAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.EmptyRepeaterPanel">
+      <Name>Fluent.EmptyRepeaterPanel</Name>
+      <HintPath>..\..\lib\Fluent.EmptyRepeaterPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.FloatingPanel">
+      <Name>Fluent.FloatingPanel</Name>
+      <HintPath>..\..\lib\Fluent.FloatingPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.Logging">
+      <Name>Fluent.Logging</Name>
+      <HintPath>..\..\lib\Fluent.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.MultiLineTextBoxValidator">
+      <Name>Fluent.MultiLineTextBoxValidator</Name>
+      <HintPath>..\..\lib\Fluent.MultiLineTextBoxValidator.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.Navigation">
+      <Name>Fluent.Navigation</Name>
+      <HintPath>..\..\lib\Fluent.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.Reporting">
+      <Name>Fluent.Reporting</Name>
+      <HintPath>..\..\lib\Fluent.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.StyleSheetLink">
+      <Name>Fluent.StyleSheetLink</Name>
+      <HintPath>..\..\lib\Fluent.StyleSheetLink.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <Name>FreeTextBox</Name>
+      <HintPath>..\..\lib\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="PageTemplate">
+      <Name>PageTemplate</Name>
+      <HintPath>..\..\lib\PageTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="Inform">
+      <HintPath>..\..\lib\Inform.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\lib\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.DataBinding">
+      <HintPath>..\..\lib\Fluent.DataBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Validators">
+      <HintPath>..\..\lib\Validators.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Preview">
+      <HintPath>..\..\lib\Microsoft.Web.Preview.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configuration\About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AddModule.aspx.cs">
+      <DependentUpon>AddModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\AddModule.aspx.designer.cs">
+      <DependentUpon>AddModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AddSetting.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AddSetting.aspx.designer.cs">
+      <DependentUpon>AddSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AddWebPart.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddWebPart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AddWebPart.aspx.designer.cs">
+      <DependentUpon>AddWebPart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Cache.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Cache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Cache.aspx.designer.cs">
+      <DependentUpon>Cache.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationSettingEditor.ascx.cs">
+      <DependentUpon>ConfigurationSettingEditor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationSettingEditor.ascx.designer.cs">
+      <DependentUpon>ConfigurationSettingEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditModule.aspx.cs">
+      <DependentUpon>EditModule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\EditModule.aspx.designer.cs">
+      <DependentUpon>EditModule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditSite.aspx.cs">
+      <DependentUpon>EditSite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\EditSite.aspx.designer.cs">
+      <DependentUpon>EditSite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditSiteHostHeaders.aspx.cs">
+      <DependentUpon>EditSiteHostHeaders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\EditSiteHostHeaders.aspx.designer.cs">
+      <DependentUpon>EditSiteHostHeaders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditWebPart.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditWebPart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditWebPart.aspx.designer.cs">
+      <DependentUpon>EditWebPart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Modules.aspx.cs">
+      <DependentUpon>Modules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Modules.aspx.designer.cs">
+      <DependentUpon>Modules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Search.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Settings.aspx.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Settings.aspx.designer.cs">
+      <DependentUpon>Settings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\SettingsTabControl.ascx.cs">
+      <DependentUpon>SettingsTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\SettingsTabControl.ascx.designer.cs">
+      <DependentUpon>SettingsTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\SettingTasks.ascx.cs">
+      <DependentUpon>SettingTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\SettingTasks.ascx.designer.cs">
+      <DependentUpon>SettingTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Sites.aspx.cs">
+      <DependentUpon>Sites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Sites.aspx.designer.cs">
+      <DependentUpon>Sites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\SiteTabControl.ascx.cs">
+      <DependentUpon>SiteTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\SiteTabControl.ascx.designer.cs">
+      <DependentUpon>SiteTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\SiteTasks.ascx.cs">
+      <DependentUpon>SiteTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\SiteTasks.ascx.designer.cs">
+      <DependentUpon>SiteTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\WebParts.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>WebParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\WebParts.aspx.designer.cs">
+      <DependentUpon>WebParts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\WebPartTasks.ascx.cs">
+      <DependentUpon>WebPartTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\WebPartTasks.ascx.designer.cs">
+      <DependentUpon>WebPartTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MessageBox.ascx.cs">
+      <DependentUpon>MessageBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\MessageBox.ascx.designer.cs">
+      <DependentUpon>MessageBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PathBrowser.ascx.cs">
+      <DependentUpon>PathBrowser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PathBrowser.ascx.designer.cs">
+      <DependentUpon>PathBrowser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopupCalendar.ascx.cs">
+      <DependentUpon>PopupCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PopupCalendar.ascx.designer.cs">
+      <DependentUpon>PopupCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Search.ascx.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Search.ascx.designer.cs">
+      <DependentUpon>Search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SlidePanel.ascx.cs">
+      <DependentUpon>SlidePanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\SlidePanel.ascx.designer.cs">
+      <DependentUpon>SlidePanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebParts\RegisteredWebPart.cs" />
+    <Compile Include="Controls\WebParts\RegisteredCatalogZone.cs" />
+    <Compile Include="Controls\WebParts\UsersOnline.ascx.cs">
+      <DependentUpon>UsersOnline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WebParts\UsersOnline.ascx.designer.cs">
+      <DependentUpon>UsersOnline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\WebParts\WebSites.ascx.cs">
+      <DependentUpon>WebSites.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\WebParts\WebSites.ascx.designer.cs">
+      <DependentUpon>WebSites.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.Master.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.Master.designer.cs">
+      <DependentUpon>Default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Home\ChangePassword.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\ProfileTasks.ascx.cs">
+      <DependentUpon>ProfileTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\ProfileTasks.ascx.designer.cs">
+      <DependentUpon>ProfileTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\SearchResults.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\SearchResults.aspx.designer.cs">
+      <DependentUpon>SearchResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleTasks.ascx.cs">
+      <DependentUpon>ModuleTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ModuleTasks.ascx.designer.cs">
+      <DependentUpon>ModuleTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ModuleTemplate.ascx.cs">
+      <DependentUpon>ModuleTemplate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home\MyProfile.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home\MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AddPermission.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AddPermission.aspx.designer.cs">
+      <DependentUpon>AddPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AddRole.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AddRole.aspx.designer.cs">
+      <DependentUpon>AddRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AddUser.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditPermission.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditPermission.aspx.designer.cs">
+      <DependentUpon>EditPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditPermissionRoles.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditPermissionRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditPermissionRoles.aspx.designer.cs">
+      <DependentUpon>EditPermissionRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditRole.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditRole.aspx.designer.cs">
+      <DependentUpon>EditRole.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditRolePermissions.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditRolePermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditRolePermissions.aspx.designer.cs">
+      <DependentUpon>EditRolePermissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditUser.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditUserRoles.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditUserRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\EditUserRoles.aspx.designer.cs">
+      <DependentUpon>EditUserRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Logs.aspx.cs">
+      <DependentUpon>Logs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\Logs.aspx.designer.cs">
+      <DependentUpon>Logs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Permissions.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Permissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Permissions.aspx.designer.cs">
+      <DependentUpon>Permissions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\PermissionTabControl.ascx.cs">
+      <DependentUpon>PermissionTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\PermissionTabControl.ascx.designer.cs">
+      <DependentUpon>PermissionTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\PermissionTasks.ascx.cs">
+      <DependentUpon>PermissionTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\PermissionTasks.ascx.designer.cs">
+      <DependentUpon>PermissionTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Roles.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleTabControl.ascx.cs">
+      <DependentUpon>RoleTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\RoleTabControl.ascx.designer.cs">
+      <DependentUpon>RoleTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\RoleTasks.ascx.cs">
+      <DependentUpon>RoleTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\RoleTasks.ascx.designer.cs">
+      <DependentUpon>RoleTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\SearchUsers.ascx.cs">
+      <DependentUpon>SearchUsers.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\SearchUsers.ascx.designer.cs">
+      <DependentUpon>SearchUsers.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserTabControl.ascx.cs">
+      <DependentUpon>UserTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\UserTabControl.ascx.designer.cs">
+      <DependentUpon>UserTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\UserTasks.ascx.cs">
+      <DependentUpon>UserTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\UserTasks.ascx.designer.cs">
+      <DependentUpon>UserTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ViewUserHistory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ViewUserHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\ViewUserHistory.aspx.designer.cs">
+      <DependentUpon>ViewUserHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerError.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ServerError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerError.aspx.designer.cs">
+      <DependentUpon>ServerError.aspx</DependentUpon>
+    </Compile>
+    <Content Include="Configuration\About.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configuration\AddModule.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configuration\AddSetting.aspx" />
+    <Content Include="Configuration\AddWebPart.aspx" />
+    <Content Include="Configuration\Cache.aspx" />
+    <Content Include="Configuration\ConfigurationSettingEditor.ascx" />
+    <Content Include="Configuration\EditModule.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configuration\EditSite.aspx" />
+    <Content Include="Configuration\EditSiteHostHeaders.aspx" />
+    <Content Include="Configuration\EditWebPart.aspx" />
+    <Content Include="Configuration\Modules.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configuration\Search.aspx" />
+    <Content Include="Configuration\Settings.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Configuration\SettingsTabControl.ascx" />
+    <Content Include="Configuration\SettingTasks.ascx" />
+    <Content Include="Configuration\Sites.aspx" />
+    <Content Include="Configuration\SiteTabControl.ascx" />
+    <Content Include="Configuration\SiteTasks.ascx" />
+    <Content Include="Configuration\WebParts.aspx" />
+    <Content Include="Configuration\WebPartTasks.ascx" />
+    <Content Include="Controls\MessageBox.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Controls\PathBrowser.ascx" />
+    <Content Include="Controls\PopupCalendar.ascx" />
+    <Content Include="App_Themes\Purple\style.css" />
+    <Content Include="Controls\Search.ascx" />
+    <Content Include="Controls\SlidePanel.ascx" />
+    <Content Include="Controls\WebParts\UsersOnline.ascx" />
+    <Content Include="Controls\WebParts\WebSites.ascx" />
+    <Content Include="Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="Global.asax">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Home\ChangePassword.aspx" />
+    <Content Include="Home\ProfileTasks.ascx" />
+    <Content Include="Home\SearchResults.aspx" />
+    <Content Include="Images\actionPanelTitle.gif" />
+    <Content Include="Images\add.gif" />
+    <Content Include="Images\arrow_down_blue.png" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\header_background.gif" />
+    <Content Include="Images\icon_add.png" />
+    <Content Include="Images\icon_archive.png" />
+    <Content Include="Images\icon_Ascending.gif" />
+    <Content Include="Images\icon_calendar.gif" />
+    <Content Include="Images\icon_cancel.png" />
+    <Content Include="Images\icon_close.png" />
+    <Content Include="Images\icon_copy.png" />
+    <Content Include="Images\icon_delete.png" />
+    <Content Include="Images\icon_Descending.gif" />
+    <Content Include="Images\icon_download.png" />
+    <Content Include="Images\icon_edit.png" />
+    <Content Include="Images\icon_editSettings.png" />
+    <Content Include="Images\icon_excel.gif" />
+    <Content Include="Images\icon_help.png" />
+    <Content Include="Images\icon_images.png" />
+    <Content Include="Images\icon_logout.png" />
+    <Content Include="Images\icon_maximize.png" />
+    <Content Include="Images\icon_minimize.png" />
+    <Content Include="Images\icon_module.png" />
+    <Content Include="Images\icon_moduleRegister.png" />
+    <Content Include="Images\icon_move.png" />
+    <Content Include="Images\icon_moveSort.gif" />
+    <Content Include="Images\icon_move_down.png" />
+    <Content Include="Images\icon_move_up.png" />
+    <Content Include="Images\icon_page.gif" />
+    <Content Include="Images\icon_pageEdit.gif" />
+    <Content Include="Images\icon_permission.png" />
+    <Content Include="Images\icon_permissionEdit.png" />
+    <Content Include="Images\icon_permissionNew.png" />
+    <Content Include="Images\icon_print.gif" />
+    <Content Include="Images\icon_properties.gif" />
+    <Content Include="Images\icon_publish.png" />
+    <Content Include="Images\icon_report.gif" />
+    <Content Include="Images\icon_restore.png" />
+    <Content Include="Images\icon_role.png" />
+    <Content Include="Images\icon_save.gif" />
+    <Content Include="Images\icon_save.png" />
+    <Content Include="Images\icon_search.gif" />
+    <Content Include="Images\icon_searchNarrow.gif" />
+    <Content Include="Images\icon_settings.gif" />
+    <Content Include="Images\icon_site.png" />
+    <Content Include="Images\icon_siteNew.png" />
+    <Content Include="Images\icon_sites.png" />
+    <Content Include="Images\icon_site_large.png" />
+    <Content Include="Images\icon_switchMode.png" />
+    <Content Include="Images\icon_unpublish.png" />
+    <Content Include="Images\icon_Unsorted.gif" />
+    <Content Include="Images\icon_user.png" />
+    <Content Include="Images\icon_userLock.png" />
+    <Content Include="Images\icon_userNew.png" />
+    <Content Include="Images\icon_users.png" />
+    <Content Include="Images\icon_userUnlock.png" />
+    <Content Include="Images\icon_view.png" />
+    <Content Include="Images\icon_webpart.png" />
+    <Content Include="Images\icon_webpartNew.png" />
+    <Content Include="Images\left_both.gif" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\logoMedium.gif" />
+    <Content Include="Images\logoSmall.gif" />
+    <Content Include="Images\logo_login.gif" />
+    <Content Include="Images\navigation_border.gif" />
+    <Content Include="Images\PoweredByAsp.Net.gif" />
+    <Content Include="Images\PoweredByInform.gif" />
+    <Content Include="Images\right_both.gif" />
+    <Content Include="Images\sidePanelBorder.gif" />
+    <Content Include="Images\sliderLeft.gif" />
+    <Content Include="Images\sliderRight.gif" />
+    <Content Include="Images\tab.gif" />
+    <Content Include="Images\tabBorder.gif" />
+    <Content Include="Images\tabCurrent.gif" />
+    <Content Include="Login.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\Default.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Modules\ModuleTasks.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Modules\ModuleTemplate.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Home\MyProfile.aspx" />
+    <Content Include="Security\AddPermission.aspx" />
+    <Content Include="Security\AddRole.aspx" />
+    <Content Include="Security\AddUser.aspx" />
+    <Content Include="Security\EditPermission.aspx" />
+    <Content Include="Security\EditPermissionRoles.aspx" />
+    <Content Include="Security\EditRole.aspx" />
+    <Content Include="Security\EditRolePermissions.aspx" />
+    <Content Include="Security\EditUser.aspx" />
+    <Content Include="Security\EditUserRoles.aspx" />
+    <Content Include="Security\Logs.aspx" />
+    <Content Include="Security\Permissions.aspx" />
+    <Content Include="Security\PermissionTabControl.ascx" />
+    <Content Include="Security\PermissionTasks.ascx" />
+    <Content Include="Security\Roles.aspx" />
+    <Content Include="Security\RoleTabControl.ascx" />
+    <Content Include="Security\RoleTasks.ascx" />
+    <Content Include="Security\SearchUsers.ascx" />
+    <Content Include="Security\UserTabControl.ascx" />
+    <Content Include="Security\ViewUserHistory.aspx" />
+    <Content Include="ServerError.aspx" />
+    <Content Include="site.js" />
+    <Content Include="Security\Default.aspx" />
+    <Content Include="Security\UserTasks.ascx" />
+    <Content Include="Web.config" />
+    <EmbeddedResource Include="Configuration\About.aspx.resx">
+      <DependentUpon>About.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\AddModule.aspx.resx">
+      <DependentUpon>AddModule.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EditModule.aspx.resx">
+      <DependentUpon>EditModule.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\EditSiteHostHeaders.aspx.resx">
+      <DependentUpon>EditSiteHostHeaders.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\Modules.aspx.resx">
+      <DependentUpon>Modules.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuration\Settings.aspx.resx">
+      <DependentUpon>Settings.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MessageBox.ascx.resx">
+      <DependentUpon>MessageBox.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PopupCalendar.ascx.resx">
+      <DependentUpon>PopupCalendar.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Global.asax.resx">
+      <DependentUpon>Global.asax.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.aspx.resx">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Default.aspx.resx">
+      <DependentUpon>Default.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ModuleTasks.ascx.resx">
+      <DependentUpon>ModuleTasks.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\ModuleTemplate.ascx.resx">
+      <DependentUpon>ModuleTemplate.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="App_Themes\Purple\Fluent.skin" />
+    <Content Include="Web.sitemap" />
+    <Content Include="Default.Master" />
+    <None Include="Images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xenosynth\Xenosynth.csproj">
+      <Project>{D5703B02-234D-46F5-8DD4-E06F430ED72B}</Project>
+      <Name>Xenosynth</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Themes\Brown\console\" />
+    <Folder Include="Css\" />
+    <Folder Include="Modules\Syndication\" />
+    <Folder Include="Tools\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2058</DevelopmentServerPort>
+          <DevelopmentServerVPath>/wwwroot/cms</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

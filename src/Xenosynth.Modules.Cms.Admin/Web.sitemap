@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode title="Content" description="Browse, create, and edit folder and pages.">
+
+    <siteMapNode title="File Explorer" description="Browse, create, and edit web site files.">
+
+      <siteMapNode url="~/Modules/Cms/Directory/BrowseDirectory.aspx" title="Directory Explorer" />
+
+      <siteMapNode siteMapFile="~/Modules/Cms/Page/Web.sitemap" />
+      <siteMapNode siteMapFile="~/Modules/Cms/Directory/Web.sitemap" />
+      <siteMapNode siteMapFile="~/Modules/Cms/ImageGallery/Web.sitemap" />
+      <siteMapNode siteMapFile="~/Modules/Cms/TemplateGallery/Web.sitemap" />
+      <siteMapNode siteMapFile="~/Modules/Cms/Shortcut/Web.sitemap" />
+      <siteMapNode siteMapFile="~/Modules/Cms/DocumentLibrary/Web.sitemap" />
+
+      <!-- Requires Blog Module -->
+      <siteMapNode siteMapFile="~/Modules/Blog/Web.sitemap" />
+
+      <siteMapNode url="~/Modules/Cms/MoveFile.aspx" title="Move or Copy File" />
+
+    </siteMapNode>
+    <siteMapNode url="~/Modules/Cms/Search.aspx" title="Search Files" />
+    <siteMapNode url="~/Modules/Cms/DeletedFiles.aspx" title="Deleted Files" />
+
+    <siteMapNode title="Tools" description="">
+      <siteMapNode url="~/Modules/Cms/Tools/ExcelImportTool.aspx" title="Excel Import Tool" />
+    </siteMapNode>
+
+    <siteMapNode title="Configuration" description="">
+      <siteMapNode url="~/Modules/Cms/Configuration/Default.aspx" title="File Types" />
+      <siteMapNode url="~/Modules/Cms/Configuration/EditFileType.aspx" title="Edit File Type" />
+      <siteMapNode url="~/Modules/Cms/Configuration/AddFileType.aspx" title="Add File Type" />
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

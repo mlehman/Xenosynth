@@ -1,0 +1,154 @@
+﻿.switchMode {
+	background-image: url(../images/icon_switchMode.png);
+}
+
+/* Content Types */
+ 
+.directory {
+	background-image: url(../images/icon_directory.png);
+}
+
+.directoryNew {
+	background-image: url(../images/icon_directoryNew.png);
+}
+
+.directoryEdit {
+	background-image: url(../images/icon_directoryEdit.png);
+}
+
+.directoryView {
+	background-image: url(../images/icon_directoryView.gif);
+}
+
+.directoryBrowse {
+	background-image: url(../images/icon_directoryBrowse.png);
+}
+
+.page {
+	background-image: url(../images/icon_page.png);
+}
+
+.pageNew {
+	background-image: url(../images/icon_pageNew.png);
+}
+
+.pageEdit {
+	background-image: url(../images/icon_pageEdit.png);
+}
+
+.pageProperties {
+	background-image: url(../images/icon_pageProperties.png);
+}
+
+.pageAttributes {
+	background-image: url(../images/icon_pageAttributes.gif);
+}
+
+.pageArchive {
+	background-image: url(../images/icon_pageArchive.gif);
+}
+
+.imagegallery {
+	background-image: url(../images/icon_imageGallery.png);
+}
+
+.imagegalleryNew {
+	background-image: url(../images/icon_imageGalleryNew.png);
+}
+
+.imagegalleryEdit {
+	background-image: url(../images/icon_imageGalleryEdit.png);
+}
+
+.imagegalleryBrowse {
+	background-image: url(../images/icon_imageGalleryBrowse.png);
+}
+
+.images {
+	background-image: url(../images/icon_images.png);
+}
+
+.image {
+	background-image: url(../images/icon_image.png);
+}
+
+.imageNew {
+	background-image: url(../images/icon_imageNew.png);
+}
+
+.imageEdit {
+	background-image: url(../images/icon_imageEdit.png);
+}
+
+.shortcut {
+	background-image: url(../images/icon_shortcut.png);
+}
+
+.shortcutNew {
+	background-image: url(../images/icon_shortcutNew.png);
+}
+
+.shortcutEdit {
+	background-image: url(../images/icon_shortcutEdit.png);
+}
+
+.templategallery {
+	background-image: url(../images/icon_templateGallery.png);
+}
+
+.templategalleryNew {
+	background-image: url(../images/icon_templateGalleryNew.png);
+}
+
+.templategalleryBrowse {
+	background-image: url(../images/icon_templateGalleryBrowse.png);
+}
+
+.templategalleryEdit {
+	background-image: url(../images/icon_templateGalleryEdit.png);
+}
+
+.template {
+	background-image: url(../images/icon_template.png);
+}
+
+.templateNew {
+	background-image: url(../images/icon_templateNew.png);
+}
+
+.templateEdit {
+	background-image: url(../images/icon_templateEdit.png);
+}
+
+.documentlibrary {
+	background-image: url(../images/icon_documentlibrary.png);
+}
+
+.documentlibraryNew {
+	background-image: url(../images/icon_documentlibraryNew.png);
+}
+
+.documentlibraryEdit {
+	background-image: url(../images/icon_documentlibraryEdit.png);
+}
+
+.documentlibraryView {
+	background-image: url(../images/icon_documentlibraryView.gif);
+}
+
+.documentlibraryBrowse {
+	background-image: url(../images/icon_documentlibraryBrowse.png);
+}
+
+.document {
+	background-image: url(../images/icon_document.png);
+}
+
+.documentNew {
+	background-image: url(../images/icon_documentNew.png);
+}
+
+.documentEdit {
+	background-image: url(../images/icon_documentEdit.png);
+}
+

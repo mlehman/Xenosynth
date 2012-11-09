@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Document Library" description="Browse, create, and edit document libraries.">
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/BrowseLibrary.aspx" title="Document Library Explorer"   />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/AddLibrary.aspx" title="Create Document Library"   />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/EditLibrary.aspx" title="Edit Document Library"   />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/EditLibraryAttributes.aspx" title="Edit Document Library Attributes" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/ViewLibraryHistory.aspx" title="View Document Library History" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/AddDocument.aspx" title="Create Document" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/UploadDocument.aspx" title="Upload Document" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/EditDocument.aspx" title="Edit Document Properties" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/EditDocumentAttributes.aspx" title="Edit Document Attributes" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/ViewDocumentRevisions.aspx" title="View Document Revisions" />
+    <siteMapNode url="~/Modules/Cms/DocumentLibrary/ViewDocumentHistory.aspx" title="View Document History" />
+  </siteMapNode>
+</siteMap>
+

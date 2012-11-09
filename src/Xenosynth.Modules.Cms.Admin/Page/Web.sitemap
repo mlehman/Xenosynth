@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Web Pages" description="Browse, create, and edit web pages. ">
+    <siteMapNode url="~/Modules/Cms/Page/AddPage.aspx" title="Create Page" />
+    <siteMapNode url="~/Modules/Cms/Page/EditPage.aspx" title="Edit Page Properties" />
+    <siteMapNode url="~/Modules/Cms/Page/EditPageAttributes.aspx" title="Edit Page Attributes" />
+    <siteMapNode url="~/Modules/Cms/Page/EditPagePublishing.aspx" title="Edit Page Publishing" />
+    <siteMapNode url="~/Modules/Cms/Page/EditPageContent.aspx" title="Edit Page Content" />
+    <siteMapNode url="~/Modules/Cms/Page/ViewPageRevisions.aspx" title="View Page Revisions" />
+    <siteMapNode url="~/Modules/Cms/Page/ViewPageHistory.aspx" title="View Page History" />
+  </siteMapNode>
+</siteMap>

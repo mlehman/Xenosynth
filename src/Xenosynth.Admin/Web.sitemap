@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+    
+    <siteMapNode title="Home" >
+      <siteMapNode title="My Dashboard">
+        <siteMapNode url="~/Default.aspx" title="My Dashboard" />  
+      </siteMapNode>
+      <siteMapNode  title="My Profile">
+        <siteMapNode url="~/Home/MyProfile.aspx" title="My Profile"  />
+        <siteMapNode url="~/Home/ChangePassword.aspx" title="Change Password"  />
+      </siteMapNode>
+      <siteMapNode url="~/Home/SearchResults.aspx" title="Search" requireModule="3b514e10-2891-4341-87f6-8f19056c2a87"  />
+    </siteMapNode>
+
+
+    <siteMapNode siteMapFile="~/Modules/Cms/Web.sitemap" />
+    <siteMapNode siteMapFile="~/Modules/Commerce/Web.sitemap" />
+    <!-- 
+    <siteMapNode siteMapFile="~/Modules/FileManager/Web.sitemap" />
+    -->
+   
+    
+    <siteMapNode title="Modules" description="Use the extended functionality provided by modules.">
+      <siteMapNode title="Installed" >
+        <siteMapNode url="~/Modules/Default.aspx" title="Installed Modules" />
+      </siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Security" description="Manage users and permissions.">
+      
+      <siteMapNode title="Users">
+        <siteMapNode url="~/Security/Default.aspx" title="Users" />
+        <siteMapNode url="~/Security/AddUser.aspx" title="Create User" />
+        <siteMapNode url="~/Security/EditUser.aspx" title="Edit User" />
+        <siteMapNode url="~/Security/EditUserRoles.aspx" title="Edit User Roles" />
+        <siteMapNode url="~/Security/ViewUserHistory.aspx" title="View User History" />
+      </siteMapNode>
+
+      <siteMapNode title="Roles">
+        <siteMapNode url="~/Security/Roles.aspx" title="Roles" />
+        <siteMapNode url="~/Security/AddRole.aspx" title="Create Role" />
+        <siteMapNode url="~/Security/EditRole.aspx" title="Edit Role Users" />
+        <siteMapNode url="~/Security/EditRolePermissions.aspx" title="Edit Role Permissions" />
+      </siteMapNode>
+      
+      <siteMapNode title="Permissions">
+        <siteMapNode url="~/Security/Permissions.aspx" title="Permissions" />
+        <siteMapNode url="~/Security/AddPermission.aspx" title="Create Permission" />
+        <siteMapNode url="~/Security/EditPermission.aspx" title="Edit Permission" />
+        <siteMapNode url="~/Security/EditPermissionRoles.aspx" title="Edit Permission Roles" />
+      </siteMapNode>
+
+      <siteMapNode title="Logs">
+        <siteMapNode url="~/Security/Logs.aspx" title="Logs" />
+        <siteMapNode url="~/Security/PurgeLogs.aspx" title="Purge Logs" />
+      </siteMapNode>
+      
+    </siteMapNode>
+    
+    <!--
+    <siteMapNode title="Tools" description="" permissions="xenosynth.admin.tools">
+      <siteMapNode url="~/Tools/Default.aspx"  />
+    </siteMapNode>
+    -->
+    
+    <siteMapNode title="Configuration" description="Configure the cms installation. ">
+      <siteMapNode title="Web Sites">
+        <siteMapNode url="~/Configuration/Sites.aspx" title="Web Sites" />
+        <siteMapNode url="~/Configuration/EditSite.aspx" title="Edit Site" icon="site" />
+        <siteMapNode url="~/Configuration/EditSiteHostHeaders.aspx" title="Edit Host Headers" />
+      </siteMapNode>
+      <siteMapNode title="Modules">
+        <siteMapNode url="~/Configuration/Modules.aspx" title="Modules" />
+        <siteMapNode url="~/Configuration/EditModule.aspx" title="Edit Module" />
+        <siteMapNode url="~/Configuration/AddModule.aspx" title="Register Module" />
+        
+      </siteMapNode>
+      <siteMapNode title="Web Parts">
+        <siteMapNode url="~/Configuration/WebParts.aspx" title="Web Parts" />
+        <siteMapNode url="~/Configuration/AddWebPart.aspx" title="Add Web Part"/>
+        <siteMapNode url="~/Configuration/EditWebPart.aspx" title="Edit Host Headers" />
+      </siteMapNode>
+      <siteMapNode title="Settings">
+        <siteMapNode url="~/Configuration/Settings.aspx" title="Configuration Settings" />
+        <siteMapNode url="~/Configuration/AddSetting.aspx" title="Add Configuration Setting" />
+      </siteMapNode>
+      <siteMapNode title="Cache">
+        <siteMapNode url="~/Configuration/Cache.aspx" title="Manage Cache" />
+      </siteMapNode>
+      <siteMapNode title="Search">
+        <siteMapNode url="~/Configuration/Search.aspx" title="Manage Search" />
+      </siteMapNode>
+      <siteMapNode title="About">
+        <siteMapNode url="~/Configuration/About.aspx" title="About Xenosynth" />
+      </siteMapNode>
+    </siteMapNode>
+    
+  </siteMapNode>
+</siteMap>

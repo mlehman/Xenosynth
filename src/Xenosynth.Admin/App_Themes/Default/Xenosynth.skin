@@ -1,0 +1,60 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+
+<asp:DataGrid Runat="Server"
+		AutoGenerateColumns="False"
+		CellPadding="4"
+		GridLines="None"
+		AllowSorting="True"
+		PagerStyle-Mode="NumericPages"
+		PagerStyle-Position="Bottom"
+		Width="100%"
+		HeaderStyle-CssClass="gridHeader"
+		HeaderStyle-Wrap="false"
+		AlternatingItemStyle-CssClass="altRow"
+		/>
+		
+<asp:TreeView Runat="server" 
+     />
+     
+<asp:WebPartZone Runat="server" 
+     WebPartVerbRenderMode="TitleBar"
+     Width="100%"
+     CssClass="webPartZone"
+     HeaderStyle-CssClass="webPartZoneHeader"
+     PartTitleStyle-CssClass="webPartTitle" 
+     CloseVerb-ImageUrl="images/icon_close.png"
+     EditVerb-ImageUrl="images/icon_editSettings.png"
+     MinimizeVerb-ImageUrl="images/icon_minimize.png"
+     RestoreVerb-ImageUrl="images/icon_maximize.png"
+     DeleteVerb-ImageUrl="images/icon_delete.png"
+    />
+    
+<asp:CatalogZone Runat="server"
+    CssClass="webPartCatalogZone" 
+    HeaderCloseVerb-ImageUrl="images/icon_close.png"
+    HeaderStyle-CssClass="webPartZoneHeader"
+    />
+    
+<asp:EditorZone runat="server" 
+    CssClass="webPartEditorZone" 
+    HeaderCloseVerb-ImageUrl="images/icon_close.png"
+    HeaderStyle-CssClass="webPartZoneHeader"
+    />
+
+
+                        

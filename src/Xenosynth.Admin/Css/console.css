@@ -1,0 +1,61 @@
+﻿/*------------------------------- console ----------------------------------*/
+@import url(icons.css);
+@import url(../modules/cms/css/style.css);
+.console {
+	width: 100%;
+	background-color: #999999;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 2px 0px 2px 0px;
+	font-weight: bolder;
+	border-top: solid 1px #CCCCCC;
+	border-bottom: solid 1px #666666;
+	font-family: Helvetica, Verdana, Arial;
+	font-size: 11px;
+	text-align: center;
+	height: 20px;
+}
+
+.console .smallLogo {
+	float:left;
+	background-image: url(../images/logoSmall.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 90px;
+	height: 20px;
+	padding-left:4px;
+	padding-right:4px;
+	vertical-align: middle;
+	display: -moz-inline-box;
+	display: inline-block;
+	border-right: solid 1px #666666;
+}
+
+.console .smallLogo span {
+	display: none;
+}
+
+.console .group {
+	float:left;
+	border-left: solid 1px #CCCCCC;
+	border-right: solid 1px #666666;
+	height: 18px;
+	padding-top: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.console .group a, .console .group a:visited {
+	text-decoration: none;
+	color: #ffffff;
+	margin-left: 6px;
+	margin-right: 6px;
+	background-position: left top;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+	_height: 20px;
+	min-height: 20px;
+	display: -moz-inline-box;
+	display: inline-block;
+}
+

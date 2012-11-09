@@ -1,0 +1,31 @@
+.blog {
+	background-image: url(../images/icon_blog.png);
+}
+
+.blogNew {
+	background-image: url(../images/icon_blogNew.png);
+}
+
+.blogEdit {
+	background-image: url(../images/icon_blogEdit.png);
+}
+
+.blogView {
+	background-image: url(../images/icon_blogView.png);
+}
+
+.blogBrowse {
+	background-image: url(../images/icon_blogBrowse.png);
+}
+
+.blogpost {
+	background-image: url(../images/icon_blogpost.png);
+}
+
+.blogpostNew {
+	background-image: url(../images/icon_blogpostNew.png);
+}
+
+.blogpostEdit {
+	background-image: url(../images/icon_blogpostEdit.png);
+}

@@ -1,0 +1,914 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BEFF6F2-9322-4477-AC00-B5B82BE0B43A}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Xenosynth.Modules.Cms.Admin</RootNamespace>
+    <AssemblyName>Xenosynth.Modules.Cms.Admin</AssemblyName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=1.0.61025.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\lib\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.AlertButton">
+      <HintPath>..\..\lib\Fluent.AlertButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.AutoPostBack">
+      <HintPath>..\..\lib\Fluent.AutoPostBack.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.DataBinding">
+      <HintPath>..\..\lib\Fluent.DataBinding.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.DataGridAdapter">
+      <HintPath>..\..\lib\Fluent.DataGridAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.EmptyRepeaterPanel">
+      <HintPath>..\..\lib\Fluent.EmptyRepeaterPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.MultiLineTextBoxValidator">
+      <HintPath>..\..\lib\Fluent.MultiLineTextBoxValidator.dll</HintPath>
+    </Reference>
+    <Reference Include="Fluent.Navigation">
+      <HintPath>..\..\lib\Fluent.Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="Inform">
+      <HintPath>..\..\lib\Inform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Directory\AddDirectory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Directory\BrowseDirectory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Directory\DirectoryTabControl.ascx" />
+    <Content Include="Directory\DirectoryTasks.ascx" />
+    <Content Include="Directory\EditDirectory.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Directory\EditDirectoryAttributes.aspx" />
+    <Content Include="Directory\ViewDirectoryHistory.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrowseFiles.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>BrowseFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseFiles.aspx.designer.cs">
+      <DependentUpon>BrowseFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationTabControl.ascx.cs">
+      <DependentUpon>ConfigurationTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\ConfigurationTabControl.ascx.designer.cs">
+      <DependentUpon>ConfigurationTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditFileType.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditFileType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\EditFileType.aspx.designer.cs">
+      <DependentUpon>EditFileType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\FileTypeTabControl.ascx.cs">
+      <DependentUpon>FileTypeTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\FileTypeTabControl.ascx.designer.cs">
+      <DependentUpon>FileTypeTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EditFileAttributes.ascx.cs">
+      <DependentUpon>EditFileAttributes.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\EditFileAttributes.ascx.designer.cs">
+      <DependentUpon>EditFileAttributes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PublishingTasks.ascx.cs">
+      <DependentUpon>PublishingTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\PublishingTasks.ascx.designer.cs">
+      <DependentUpon>PublishingTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecentFileTasks.ascx.cs">
+      <DependentUpon>RecentFileTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\RecentFileTasks.ascx.designer.cs">
+      <DependentUpon>RecentFileTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ViewFileHistory.ascx.cs">
+      <DependentUpon>ViewFileHistory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\ViewFileHistory.ascx.designer.cs">
+      <DependentUpon>ViewFileHistory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedFiles.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DeletedFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeletedFiles.aspx.designer.cs">
+      <DependentUpon>DeletedFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\AddDirectory.aspx.cs">
+      <DependentUpon>AddDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\AddDirectory.aspx.designer.cs">
+      <DependentUpon>AddDirectory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\BrowseDirectory.aspx.cs">
+      <DependentUpon>BrowseDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\BrowseDirectory.aspx.designer.cs">
+      <DependentUpon>BrowseDirectory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectoryTabControl.ascx.cs">
+      <DependentUpon>DirectoryTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\DirectoryTabControl.ascx.designer.cs">
+      <DependentUpon>DirectoryTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\DirectoryTasks.ascx.cs">
+      <DependentUpon>DirectoryTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\DirectoryTasks.ascx.designer.cs">
+      <DependentUpon>DirectoryTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\EditDirectory.aspx.cs">
+      <DependentUpon>EditDirectory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\EditDirectory.aspx.designer.cs">
+      <DependentUpon>EditDirectory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\EditDirectoryAttributes.aspx.cs">
+      <DependentUpon>EditDirectoryAttributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\EditDirectoryAttributes.aspx.designer.cs">
+      <DependentUpon>EditDirectoryAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Directory\ViewDirectoryHistory.aspx.cs">
+      <DependentUpon>ViewDirectoryHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Directory\ViewDirectoryHistory.aspx.designer.cs">
+      <DependentUpon>ViewDirectoryHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\AddDocument.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\AddDocument.aspx.designer.cs">
+      <DependentUpon>AddDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\AddLibrary.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\AddLibrary.aspx.designer.cs">
+      <DependentUpon>AddLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\BrowseLibrary.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>BrowseLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\BrowseLibrary.aspx.designer.cs">
+      <DependentUpon>BrowseLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentLibraryTabControl.ascx.cs">
+      <DependentUpon>DocumentLibraryTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentLibraryTabControl.ascx.designer.cs">
+      <DependentUpon>DocumentLibraryTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentLibraryTasks.ascx.cs">
+      <DependentUpon>DocumentLibraryTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentLibraryTasks.ascx.designer.cs">
+      <DependentUpon>DocumentLibraryTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentTabControl.ascx.cs">
+      <DependentUpon>DocumentTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentTabControl.ascx.designer.cs">
+      <DependentUpon>DocumentTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentTasks.ascx.cs">
+      <DependentUpon>DocumentTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DocumentLibrary\DocumentTasks.ascx.designer.cs">
+      <DependentUpon>DocumentTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditDocument.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditDocument.aspx.designer.cs">
+      <DependentUpon>EditDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditDocumentAttributes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditDocumentAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditDocumentAttributes.aspx.designer.cs">
+      <DependentUpon>EditDocumentAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditLibraryAttributes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditLibraryAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditLibraryAttributes.aspx.designer.cs">
+      <DependentUpon>EditLibraryAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditLibrary.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\EditLibrary.aspx.designer.cs">
+      <DependentUpon>EditLibrary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\UploadDocument.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>UploadDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\UploadDocument.aspx.designer.cs">
+      <DependentUpon>UploadDocument.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\ViewDocumentHistory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ViewDocumentHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\ViewDocumentHistory.aspx.designer.cs">
+      <DependentUpon>ViewDocumentHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\ViewDocumentRevisions.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ViewDocumentRevisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentLibrary\ViewDocumentRevisions.aspx.designer.cs">
+      <DependentUpon>ViewDocumentRevisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FileExplorer.ascx.cs">
+      <DependentUpon>FileExplorer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FileExplorer.ascx.designer.cs">
+      <DependentUpon>FileExplorer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\AddGallery.aspx.cs">
+      <DependentUpon>AddGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\AddGallery.aspx.designer.cs">
+      <DependentUpon>AddGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\AddImage.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\AddImage.aspx.designer.cs">
+      <DependentUpon>AddImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGallerPopup.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ImageGallerPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGallerPopup.aspx.designer.cs">
+      <DependentUpon>ImageGallerPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\UploadImage.aspx.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\UploadImage.aspx.designer.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\BrowseGallery.aspx.cs">
+      <DependentUpon>BrowseGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\BrowseGallery.aspx.designer.cs">
+      <DependentUpon>BrowseGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\EditGallery.aspx.cs">
+      <DependentUpon>EditGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\EditGallery.aspx.designer.cs">
+      <DependentUpon>EditGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\EditGalleryAttributes.aspx.cs">
+      <DependentUpon>EditGalleryAttributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\EditGalleryAttributes.aspx.designer.cs">
+      <DependentUpon>EditGalleryAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\EditImage.aspx.cs">
+      <DependentUpon>EditImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\EditImage.aspx.designer.cs">
+      <DependentUpon>EditImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\EditImageAttributes.aspx.cs">
+      <DependentUpon>EditImageAttributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\EditImageAttributes.aspx.designer.cs">
+      <DependentUpon>EditImageAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGalleryTabControl.ascx.cs">
+      <DependentUpon>ImageGalleryTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGalleryTabControl.ascx.designer.cs">
+      <DependentUpon>ImageGalleryTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGalleryTasks.ascx.cs">
+      <DependentUpon>ImageGalleryTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ImageGalleryTasks.ascx.designer.cs">
+      <DependentUpon>ImageGalleryTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageTabControl.ascx.cs">
+      <DependentUpon>ImageTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ImageTabControl.ascx.designer.cs">
+      <DependentUpon>ImageTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ImageTasks.ascx.cs">
+      <DependentUpon>ImageTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ImageTasks.ascx.designer.cs">
+      <DependentUpon>ImageTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ViewGalleryHistory.aspx.cs">
+      <DependentUpon>ViewGalleryHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ViewGalleryHistory.aspx.designer.cs">
+      <DependentUpon>ViewGalleryHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ViewImageHistory.aspx.cs">
+      <DependentUpon>ViewImageHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ViewImageHistory.aspx.designer.cs">
+      <DependentUpon>ViewImageHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ViewImageRevisions.aspx.cs">
+      <DependentUpon>ViewImageRevisions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ViewImageRevisions.aspx.designer.cs">
+      <DependentUpon>ViewImageRevisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageGallery\ViewImageSizes.aspx.cs">
+      <DependentUpon>ViewImageSizes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageGallery\ViewImageSizes.aspx.designer.cs">
+      <DependentUpon>ViewImageSizes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MoveFile.aspx.cs">
+      <DependentUpon>MoveFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MoveFile.aspx.designer.cs">
+      <DependentUpon>MoveFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\AddPage.aspx.cs">
+      <DependentUpon>AddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\AddPage.aspx.designer.cs">
+      <DependentUpon>AddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\EditContentType.aspx.cs">
+      <DependentUpon>EditContentType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\EditContentType.aspx.designer.cs">
+      <DependentUpon>EditContentType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\EditPage.aspx.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\EditPage.aspx.designer.cs">
+      <DependentUpon>EditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\EditPageAttributes.aspx.cs">
+      <DependentUpon>EditPageAttributes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\EditPageAttributes.aspx.designer.cs">
+      <DependentUpon>EditPageAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\EditPageContent.aspx.cs">
+      <DependentUpon>EditPageContent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\EditPageContent.aspx.designer.cs">
+      <DependentUpon>EditPageContent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\EditPagePublishing.aspx.cs">
+      <DependentUpon>EditPagePublishing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\EditPagePublishing.aspx.designer.cs">
+      <DependentUpon>EditPagePublishing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\PageTabControl.ascx.cs">
+      <DependentUpon>PageTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\PageTabControl.ascx.designer.cs">
+      <DependentUpon>PageTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\PageTasks.ascx.cs">
+      <DependentUpon>PageTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\PageTasks.ascx.designer.cs">
+      <DependentUpon>PageTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ViewPageHistory.aspx.cs">
+      <DependentUpon>ViewPageHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ViewPageHistory.aspx.designer.cs">
+      <DependentUpon>ViewPageHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\ViewPageRevisions.aspx.cs">
+      <DependentUpon>ViewPageRevisions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\ViewPageRevisions.aspx.designer.cs">
+      <DependentUpon>ViewPageRevisions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PathBrowser.ascx.cs">
+      <DependentUpon>PathBrowser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PathBrowser.ascx.designer.cs">
+      <DependentUpon>PathBrowser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateGallery\EditTemplateAttributes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditTemplateAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateAttributes.aspx.designer.cs">
+      <DependentUpon>EditTemplateAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateGalleryAttributes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditTemplateGalleryAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateGalleryAttributes.aspx.designer.cs">
+      <DependentUpon>EditTemplateGalleryAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateTasks.ascx.cs">
+      <DependentUpon>TemplateTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateTasks.ascx.designer.cs">
+      <DependentUpon>TemplateTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ExcelImportTool.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ExcelImportTool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ExcelImportTool.aspx.designer.cs">
+      <DependentUpon>ExcelImportTool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\RecentFileList.ascx.cs">
+      <DependentUpon>RecentFileList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\RecentFileList.ascx.designer.cs">
+      <DependentUpon>RecentFileList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFiles.ascx.cs">
+      <DependentUpon>SearchFiles.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchFiles.ascx.designer.cs">
+      <DependentUpon>SearchFiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SortControl.cs" />
+    <Compile Include="Shortcut\AddShortcut.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddShortcut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\AddShortcut.aspx.designer.cs">
+      <DependentUpon>AddShortcut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\EditShortcut.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditShortcut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\EditShortcut.aspx.designer.cs">
+      <DependentUpon>EditShortcut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\EditShortcutAttributes.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditShortcutAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\EditShortcutAttributes.aspx.designer.cs">
+      <DependentUpon>EditShortcutAttributes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\ShortcutTabControl.ascx.cs">
+      <DependentUpon>ShortcutTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shortcut\ShortcutTabControl.ascx.designer.cs">
+      <DependentUpon>ShortcutTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\ShortcutTasks.ascx.cs">
+      <DependentUpon>ShortcutTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Shortcut\ShortcutTasks.ascx.designer.cs">
+      <DependentUpon>ShortcutTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\ViewShortcutHistory.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ViewShortcutHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Shortcut\ViewShortcutHistory.aspx.designer.cs">
+      <DependentUpon>ViewShortcutHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SlidePanel.ascx.cs">
+      <DependentUpon>SlidePanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SlidePanel.ascx.designer.cs">
+      <DependentUpon>SlidePanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\AddTemplate.aspx.cs">
+      <DependentUpon>AddTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\AddTemplate.aspx.designer.cs">
+      <DependentUpon>AddTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\AddTemplateGallery.aspx.cs">
+      <DependentUpon>AddTemplateGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\AddTemplateGallery.aspx.designer.cs">
+      <DependentUpon>AddTemplateGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\BrowseTemplateGallery.aspx.cs">
+      <DependentUpon>BrowseTemplateGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\BrowseTemplateGallery.aspx.designer.cs">
+      <DependentUpon>BrowseTemplateGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplate.aspx.cs">
+      <DependentUpon>EditTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplate.aspx.designer.cs">
+      <DependentUpon>EditTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateContentBlocks.aspx.cs">
+      <DependentUpon>EditTemplateContentBlocks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateContentBlocks.aspx.designer.cs">
+      <DependentUpon>EditTemplateContentBlocks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateGallery.aspx.cs">
+      <DependentUpon>EditTemplateGallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\EditTemplateGallery.aspx.designer.cs">
+      <DependentUpon>EditTemplateGallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateGalleryTabControl.ascx.cs">
+      <DependentUpon>TemplateGalleryTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateGalleryTabControl.ascx.designer.cs">
+      <DependentUpon>TemplateGalleryTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateGalleryTasks.ascx.cs">
+      <DependentUpon>TemplateGalleryTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateGalleryTasks.ascx.designer.cs">
+      <DependentUpon>TemplateGalleryTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateTabControl.ascx.cs">
+      <DependentUpon>TemplateTabControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemplateGallery\TemplateTabControl.ascx.designer.cs">
+      <DependentUpon>TemplateTabControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\ContentList.ascx.cs">
+      <DependentUpon>ContentList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\ContentList.ascx.designer.cs">
+      <DependentUpon>ContentList.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Directory\AddDirectory.aspx.resx">
+      <DependentUpon>AddDirectory.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directory\BrowseDirectory.aspx.resx">
+      <DependentUpon>BrowseDirectory.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directory\EditDirectory.aspx.resx">
+      <DependentUpon>EditDirectory.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoveFile.aspx.resx">
+      <DependentUpon>MoveFile.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\AddPage.aspx.resx">
+      <DependentUpon>AddPage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\EditPage.aspx.resx">
+      <DependentUpon>EditPage.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\EditPageAttributes.aspx.resx">
+      <DependentUpon>EditPageAttributes.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\EditPageContent.aspx.resx">
+      <DependentUpon>EditPageContent.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page\PageTasks.ascx.resx">
+      <DependentUpon>PageTasks.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.aspx.resx">
+      <DependentUpon>Search.aspx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFiles.ascx.resx">
+      <DependentUpon>SearchFiles.ascx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Directory\Web.sitemap" />
+    <Content Include="ImageGallery\AddGallery.aspx" />
+    <Content Include="ImageGallery\UploadImage.aspx" />
+    <Content Include="ImageGallery\BrowseGallery.aspx" />
+    <Content Include="ImageGallery\EditGallery.aspx" />
+    <Content Include="ImageGallery\EditGalleryAttributes.aspx" />
+    <Content Include="ImageGallery\EditImage.aspx" />
+    <Content Include="ImageGallery\EditImageAttributes.aspx" />
+    <Content Include="ImageGallery\ImageGalleryTabControl.ascx" />
+    <Content Include="ImageGallery\ImageGalleryTasks.ascx" />
+    <Content Include="ImageGallery\ImageTabControl.ascx" />
+    <Content Include="ImageGallery\ImageTasks.ascx" />
+    <Content Include="ImageGallery\ViewGalleryHistory.aspx" />
+    <Content Include="ImageGallery\ViewImageHistory.aspx" />
+    <Content Include="ImageGallery\ViewImageRevisions.aspx" />
+    <Content Include="ImageGallery\ViewImageSizes.aspx" />
+    <Content Include="SearchFiles.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ImageGallery\Web.sitemap" />
+    <Content Include="Page\AddPage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Page\EditPage.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Page\EditPageAttributes.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Page\EditPageContent.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="Page\EditPagePublishing.aspx" />
+    <Content Include="Page\PageTabControl.ascx" />
+    <Content Include="Page\PageTasks.ascx">
+      <SubType>UserControl</SubType>
+    </Content>
+    <Content Include="Page\ViewPageHistory.aspx" />
+    <Content Include="Page\ViewPageRevisions.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Page\Web.sitemap" />
+    <Content Include="TemplateGallery\AddTemplate.aspx" />
+    <Content Include="TemplateGallery\AddTemplateGallery.aspx" />
+    <Content Include="TemplateGallery\BrowseTemplateGallery.aspx" />
+    <Content Include="TemplateGallery\EditTemplate.aspx" />
+    <Content Include="TemplateGallery\EditTemplateContentBlocks.aspx" />
+    <Content Include="TemplateGallery\EditTemplateGallery.aspx" />
+    <Content Include="TemplateGallery\TemplateGalleryTabControl.ascx" />
+    <Content Include="TemplateGallery\TemplateGalleryTasks.ascx" />
+    <Content Include="TemplateGallery\TemplateTabControl.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FileExplorer.ascx" />
+    <Content Include="MoveFile.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="PathBrowser.ascx" />
+    <Content Include="Search.aspx">
+      <SubType>Form</SubType>
+    </Content>
+    <Content Include="TemplateGallery\Web.sitemap" />
+    <Content Include="WebParts\ContentList.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Xenosynth.Modules.Cms\Xenosynth.Modules.Cms.csproj">
+      <Project>{71DF4311-B87B-4C87-A999-822A800A555F}</Project>
+      <Name>Xenosynth.Modules.Cms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xenosynth\Xenosynth.csproj">
+      <Project>{D5703B02-234D-46F5-8DD4-E06F430ED72B}</Project>
+      <Name>Xenosynth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Xenosynth.Admin\Xenosynth.Admin.csproj">
+      <Project>{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}</Project>
+      <Name>Xenosynth.Admin</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DeletedFiles.aspx" />
+    <Content Include="ImageGallery\AddImage.aspx" />
+    <Content Include="WebParts\RecentFileList.ascx" />
+    <Content Include="SlidePanel.ascx" />
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BrowseFiles.aspx" />
+    <Content Include="Configuration\ConfigurationTabControl.ascx" />
+    <Content Include="Configuration\Default.aspx" />
+    <Content Include="Configuration\EditFileType.aspx" />
+    <Content Include="Controls\EditFileAttributes.ascx" />
+    <Content Include="Controls\PublishingTasks.ascx" />
+    <Content Include="Controls\RecentFileTasks.ascx" />
+    <Content Include="Controls\ViewFileHistory.ascx" />
+    <Content Include="DocumentLibrary\AddLibrary.aspx" />
+    <Content Include="DocumentLibrary\DocumentLibraryTabControl.ascx" />
+    <Content Include="ImageGallery\ImageGallerPopup.aspx" />
+    <Content Include="Shortcut\AddShortcut.aspx" />
+    <Content Include="Shortcut\EditShortcut.aspx" />
+    <Content Include="Shortcut\EditShortcutAttributes.aspx" />
+    <Content Include="Shortcut\ShortcutTabControl.ascx" />
+    <Content Include="Shortcut\ShortcutTasks.ascx" />
+    <Content Include="Shortcut\ViewShortcutHistory.aspx" />
+    <Content Include="Shortcut\Web.sitemap" />
+    <Content Include="TemplateGallery\TemplateTasks.ascx" />
+    <Content Include="Tools\ExcelImportTool.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Configuration\FileTypeTabControl.ascx" />
+    <Content Include="DocumentLibrary\AddDocument.aspx" />
+    <Content Include="DocumentLibrary\BrowseLibrary.aspx" />
+    <Content Include="DocumentLibrary\DocumentLibraryTasks.ascx" />
+    <Content Include="DocumentLibrary\DocumentTabControl.ascx" />
+    <Content Include="DocumentLibrary\DocumentTasks.ascx" />
+    <Content Include="DocumentLibrary\EditDocument.aspx" />
+    <Content Include="DocumentLibrary\EditDocumentAttributes.aspx" />
+    <Content Include="DocumentLibrary\EditLibraryAttributes.aspx" />
+    <Content Include="DocumentLibrary\EditLibrary.aspx" />
+    <Content Include="DocumentLibrary\UploadDocument.aspx" />
+    <Content Include="DocumentLibrary\ViewDocumentHistory.aspx" />
+    <Content Include="DocumentLibrary\ViewDocumentRevisions.aspx" />
+    <Content Include="DocumentLibrary\Web.sitemap" />
+    <Content Include="Page\EditContentType.aspx" />
+    <Content Include="TemplateGallery\EditTemplateAttributes.aspx" />
+    <Content Include="TemplateGallery\EditTemplateGalleryAttributes.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Css\" />
+    <Folder Include="Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" Condition="" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1068</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+    <MonoDevelop>
+      <Properties VerifyCodeBehindFields="True" VerifyCodeBehindEvents="True">
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

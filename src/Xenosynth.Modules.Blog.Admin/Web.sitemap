@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Blogs" description="Browse, create, and edit blogs.">
+    <siteMapNode url="~/Modules/Blog/BrowseBlog.aspx" title="Blog Postings"   />
+    <siteMapNode url="~/Modules/Blog/AddBlog.aspx" title="Create Blog"   />
+    <siteMapNode url="~/Modules/Blog/EditBlog.aspx" title="Edit Blog"   />
+    <siteMapNode url="~/Modules/Blog/EditBlogAttributes.aspx" title="Edit Blog Attributes" />
+    <siteMapNode url="~/Modules/Blog/ViewBlogHistory.aspx" title="View Blog History" />
+    <siteMapNode url="~/Modules/Blog/AddBlogPost.aspx" title="Create Blog Post"   />
+    <siteMapNode url="~/Modules/Blog/EditBlogPost.aspx" title="Edit Blog Post"   />
+    <siteMapNode url="~/Modules/Blog/EditBlogPostPublishing.aspx"  title="Edit Blog Post Publishing"   />
+    <siteMapNode url="~/Modules/Blog/ViewBlogPostComments.aspx" title="View Blog Post Comments" />
+    <siteMapNode url="~/Modules/Blog/EditBlogPostAttributes.aspx" title="Edit Blog Post Attributes" />
+    <siteMapNode url="~/Modules/Blog/ViewBlogPostRevisions.aspx" title="View Blog Post Revisions" />
+    <siteMapNode url="~/Modules/Blog/ViewBlogPostHistory.aspx" title="View Blog Post History" />
+  </siteMapNode>
+</siteMap>
+

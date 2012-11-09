@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Shortcuts" description="Browse, create, and edit shorcuts. ">
+    <siteMapNode url="~/Modules/Cms/Shortcut/AddShortcut.aspx" title="Create Shortcut" />
+    <siteMapNode url="~/Modules/Cms/Shortcut/EditShortcut.aspx" title="Edit Shortcut Properties" />
+    <siteMapNode url="~/Modules/Cms/Shortcut/EditShortcutAttributes.aspx" title="Edit Shortcut Attributes" />
+    <siteMapNode url="~/Modules/Cms/Shortcut/ViewShortcutHistory.aspx" title="View Shortcut History" />
+  </siteMapNode>
+</siteMap>

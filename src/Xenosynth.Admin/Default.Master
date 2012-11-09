@@ -1,0 +1,53 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="Xenosynth.Admin.Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Xenosynth</title>
+</head>
+<body>
+    <form id="form1" runat="server" style="height: 100%;">
+        <asp:ScriptManager id="MasterScriptManager" EnableScriptGlobalization="false" EnablePartialRendering="true" runat="Server">
+        </asp:ScriptManager>
+        <div class="frame">
+        
+	        <div class="header">
+		        <a href='<%= ResolveUrl("~/") %>'><div class="logo"><span>Xenosynth</span></div></a>        
+		        <div class="userInfo"> 
+		            <div class="userLogin">
+		                <b>logged in as:</b> <%= Page.User.Identity.Name %>
+		            </div>
+		            <div class="userActions">
+		                <asp:LinkButton runat="server" ID="LinkButtonLogOut" OnClick="LinkButtonLogOut_OnClick" CssClass="action logout">log out</asp:LinkButton> 
+		                <a class="action help">help</a>
+		            </div>  
+		        </div>
+	        </div>
+
+	        <navigation:TabControl ID="TabControlNavigationMain" SelectedEnabled="true" OnCommand="TabControlNavigation_OnCommand" runat="Server" CssClass="navigationMain" >
+	        </navigation:TabControl>
+	        <navigation:TabControl ID="TabControlNavigationSub" SelectedEnabled="true" OnCommand="TabControlNavigation_OnCommand" runat="Server" CssClass="navigationSub" >
+	        </navigation:TabControl>
+        	
+	        <div class="middle">       
+	            <div class="main">
+		            	<h1><%= this.Page.Title %></h1>
+			            <asp:ContentPlaceHolder runat="server" ID="Main" />
+		        </div>
+		        <div class="side">
+	                <asp:ContentPlaceHolder runat="server" ID="Side" />
+	                <%-- <xs:ModeSwitcher runat="server" /> --%>
+                </div>
+		        
+    	    </div>
+    	    <div class="footer">
+		        <div class="copyright">
+			        Copyright 2006 Fluent Consulting
+		        </div>
+		        <br class="clear" />
+	        </div>
+         </div>
+    </form>
+</body>
+</html>

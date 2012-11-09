@@ -1,0 +1,162 @@
+﻿ 
+/* Security */
+
+.settings {
+	background-image: url(../images/icon_settings.gif);
+}
+
+.users {
+	background-image: url(../images/icon_users.png);
+}
+
+.user {
+	background-image: url(../images/icon_user.png);
+}
+
+.userNew {
+	background-image: url(../images/icon_userNew.png);
+}
+
+.userUnlock {
+	background-image: url(../images/icon_userUnlock.png);
+}
+
+.roles {
+	background-image: url(../images/icon_role.png);
+}
+
+.role {
+	background-image: url(../images/icon_role.png);
+}
+
+.roleNew {
+	background-image: url(../images/icon_role.png);
+}
+
+.permissions {
+	background-image: url(../images/icon_permission.png);
+}
+
+.permission {
+	background-image: url(../images/icon_permission.png);
+}
+
+.permissionNew {
+	background-image: url(../images/icon_permissionNew.png);
+}
+
+.permissionEdit {
+	background-image: url(../images/icon_permissionEdit.png);
+}
+
+.sites {
+	background-image: url(../images/icon_sites.png);
+}
+
+.site {
+	background-image: url(../images/icon_site.png);
+}
+
+.siteNew {
+	background-image: url(../images/icon_siteNew.png);
+}
+
+.webpart {
+	background-image: url(../images/icon_webpart.png);
+}
+
+.webpartNew {
+	background-image: url(../images/icon_webpartNew.png);
+}
+
+.module {
+	background-image: url(../images/icon_module.png);
+}
+
+.moduleRegister {
+	background-image: url(../images/icon_moduleRegister.png);
+}
+
+.report {
+	background-image: url(../images/icon_report.gif);
+}
+
+.search {
+	background-image: url(../images/icon_search.gif);
+}
+
+.add {
+	background-image: url(../images/icon_add.png);
+}
+
+.edit {
+	background-image: url(../images/icon_edit.png);
+}
+
+.view {
+	background-image: url(../images/icon_view.png);
+}
+
+.save {
+	background-image: url(../images/icon_save.png);
+}
+
+.download {
+	background-image: url(../images/icon_download.png);
+}
+
+.move {
+	background-image: url(../images/icon_move.png);
+}
+
+
+.cancel {
+	background-image: url(../images/icon_cancel.png);
+}
+
+.delete {
+	background-image: url(../images/icon_delete.png);
+}
+
+.publish {
+	background-image: url(../images/icon_publish.png);
+}
+
+.unpublish {
+	background-image: url(../images/icon_unpublish.png);
+}
+
+.archive {
+	background-image: url(../images/icon_archive.png);
+}
+
+.restore {
+	background-image: url(../images/icon_restore.png);
+}
+
+.copy {
+	background-image: url(../images/icon_copy.png);
+}
+
+
+.moveUp {
+	background-image: url(../images/icon_move_up.png);
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.moveDown {
+	background-image: url(../images/icon_move_down.png);
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+
+.help {
+	background-image: url(../images/icon_help.png);
+}
+
+.logout {
+	background-image: url(../images/icon_logout.png);
+}

@@ -44,16 +44,14 @@
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
-    <Reference Include="FreeTextBox, Version=3.0.5000.1, Culture=neutral, PublicKeyToken=5962a4e684a48b87">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\FreeTextBox.dll</HintPath>
-    </Reference>
-    <Reference Include="StaticDust.Web.UI.Controls.UploadDialog, Version=2.3.1.10088, Culture=neutral, PublicKeyToken=7a8bf5cc6a5e58dd">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\StaticDust.Web.UI.Controls.UploadDialog.dll</HintPath>
-    </Reference>
     <Reference Include="Inform">
       <HintPath>..\..\lib\Inform.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox">
+      <HintPath>..\..\lib\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="StaticDust.Web.UI.Controls.UploadDialog">
+      <HintPath>..\..\lib\StaticDust.Web.UI.Controls.UploadDialog.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Directories" description="Browse, create, and edit directories. ">
+    <siteMapNode url="~/Modules/Cms/Directory/AddDirectory.aspx" title="Create Directory" />
+    <siteMapNode url="~/Modules/Cms/Directory/EditDirectory.aspx" title="Edit Directory Properties" />
+    <siteMapNode url="~/Modules/Cms/Directory/EditDirectoryAttributes.aspx" title="Edit Directory Attributes" />
+    <siteMapNode url="~/Modules/Cms/Directory/EditDirectoryConfiguration.aspx" title="Edit Directory Configuration" />
+    <siteMapNode url="~/Modules/Cms/Directory/ViewDirectoryHistory.aspx" title="View Directory History" />
+  </siteMapNode>
+</siteMap>

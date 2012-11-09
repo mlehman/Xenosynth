@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenosynth.Modules.Cms", "Xe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenosynth.Modules.Blog", "Xenosynth.Modules.Blog\Xenosynth.Modules.Blog.csproj", "{12D94FCA-E1B8-462A-9DBE-723043994710}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenosynth.Admin", "Xenosynth.Admin\Xenosynth.Admin.csproj", "{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenosynth.Modules.Cms.Admin", "Xenosynth.Modules.Cms.Admin\Xenosynth.Modules.Cms.Admin.csproj", "{6BEFF6F2-9322-4477-AC00-B5B82BE0B43A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xenosynth.Modules.Blog.Admin", "Xenosynth.Modules.Blog.Admin\Xenosynth.Modules.Blog.Admin.csproj", "{E34D24F9-98D7-4A1D-A9CC-4B55DC4AD329}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,14 +23,26 @@ Global
 		{12D94FCA-E1B8-462A-9DBE-723043994710}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12D94FCA-E1B8-462A-9DBE-723043994710}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12D94FCA-E1B8-462A-9DBE-723043994710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEFF6F2-9322-4477-AC00-B5B82BE0B43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEFF6F2-9322-4477-AC00-B5B82BE0B43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEFF6F2-9322-4477-AC00-B5B82BE0B43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEFF6F2-9322-4477-AC00-B5B82BE0B43A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71DF4311-B87B-4C87-A999-822A800A555F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{71DF4311-B87B-4C87-A999-822A800A555F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71DF4311-B87B-4C87-A999-822A800A555F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71DF4311-B87B-4C87-A999-822A800A555F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD3D82CB-5EDC-4F9C-91C1-7EED4EEC432D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D5703B02-234D-46F5-8DD4-E06F430ED72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D5703B02-234D-46F5-8DD4-E06F430ED72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5703B02-234D-46F5-8DD4-E06F430ED72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5703B02-234D-46F5-8DD4-E06F430ED72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E34D24F9-98D7-4A1D-A9CC-4B55DC4AD329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E34D24F9-98D7-4A1D-A9CC-4B55DC4AD329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E34D24F9-98D7-4A1D-A9CC-4B55DC4AD329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E34D24F9-98D7-4A1D-A9CC-4B55DC4AD329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Xenosynth\Xenosynth.csproj

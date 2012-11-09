@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Images Galleries" description="Browse, create, and edit image galleries.">
+    <siteMapNode url="~/Modules/Cms/ImageGallery/BrowseGallery.aspx" title="Image Gallery Explorer"   />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/AddGallery.aspx" title="Create Image Gallery"   />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/EditGallery.aspx" title="Edit Image Gallery"   />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/EditGalleryAttributes.aspx" title="Edit Image Gallery Attributes" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/ViewGalleryHistory.aspx" title="View Image Gallery History" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/AddImage.aspx" title="Create Image" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/UploadImage.aspx" title="Upload Image" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/EditImage.aspx" title="Edit Image Properties" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/EditImageAttributes.aspx" title="Edit Image Attributes" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/ViewImageSizes.aspx" title="View Image Sizes" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/ViewImageRevisions.aspx" title="View Image Revisions" />
+    <siteMapNode url="~/Modules/Cms/ImageGallery/ViewImageHistory.aspx" title="View Image History" />
+  </siteMapNode>
+</siteMap>
+

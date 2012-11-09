@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Template Galleries" description="Browse, create, and edit template galleries.">
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/BrowseTemplateGallery.aspx" title="Template Gallery Explorer"   />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/AddTemplateGallery.aspx" title="Create Template Gallery"   />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/EditTemplateGallery.aspx" title="Edit Template Gallery"   />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/EditTemplateGalleryAttributes.aspx" title="Edit Template Gallery Attributes" />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/AddTemplate.aspx" title="Add Template" />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/EditTemplate.aspx" title="Edit Template Properties" />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/EditTemplateContentBlocks.aspx" title="Manage Template Content Blocks" />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/EditTemplateAttributes.aspx" title="Edit Template Attributes" />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/ViewTemplateRevisions.aspx" title="View Template Revisions" />
+    <siteMapNode url="~/Modules/Cms/TemplateGallery/ViewTemplateHistory.aspx" title="View Template History" />
+  </siteMapNode>
+</siteMap>
+
